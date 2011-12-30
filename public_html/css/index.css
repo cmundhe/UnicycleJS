@@ -1,0 +1,75 @@
+/* Fonts */
+@font-face { font-family: "Museo300"; src: url(fonts/Museo300-Regular.otf); }
+@font-face { font-family: "Museo500"; src: url(fonts/Museo500-Regular.otf); }
+@font-face { font-family: "Museo700"; src: url(fonts/Museo700-Regular.otf); }
+@font-face { font-family: "MuseoSans300"; src: url(fonts/MuseoSans-300.otf); }
+@font-face { font-family: "MuseoSans500"; src: url(fonts/MuseoSans_500.otf); }
+@font-face { font-family: "MuseoSans700"; src: url(fonts/MuseoSans_700.otf); }
+@font-face { font-family: "MuseoSansItalic300"; src: url(fonts/MuseoSans-300Italic.otf); }
+
+/* Body */
+body { padding: 0 20px 20px 20px; }
+body * { position: relative; }
+
+/* Container */
+#container { margin: 0 auto 24px auto; width: 900px; }
+
+/* Header */
+/*#header { width: 900px; margin-bottom: 48px; }
+#header #logo { float: left; }
+#header #logo a { font: 2em "Museo500"; text-decoration: none; color: #222; }
+#header #logo em { font-family: "Museo300"; }
+#header #nav { float: right;  }
+#header #nav li { display: inline-block; vertical-align: top; margin-right: 10px;
+	font: .9em "MuseoSans300"; cursor: pointer; }
+#header #nav a { color: #777; text-decoration: none; }
+#header #nav a:hover, #header #nav a.active { color: #333; text-decoration: underline; }*/
+
+/* Splash */
+#splash { /*margin-bottom: -20px;*/ padding: 26px 10px 0 36px; width: 854px; height: 206px; background: url(../images/splash-bg.png); }
+#splash .unicycle { float: right; margin-top: -26px; width: 366px; height: 236px; background: url(../images/splash-unicycle.png) no-repeat; }
+#splash .heading { margin-bottom: 14px; width: 462px; height: 43px; background: url(../images/splash-heading.png) no-repeat; }
+
+#splash em { font-family: Museo300; }
+#splash p { margin-bottom: 24px; font: 1.1em MuseoSans300; line-height: 1.6em; color: #444; }
+.downloads { left: 54px; }
+.downloads li { display: inline-block; margin-right: 12px; }
+.downloads a { display: block; padding: 13px 0 0 31px; width: 141px; height: 29px;
+	color: #fff; text-shadow: 0 1px #000; text-decoration: none; text-align: center; font: 0.9em MuseoSans300;
+	background: url(../images/button-download.png) top no-repeat; }
+.downloads a:hover { background-position: bottom; color: #fee; }
+.downloads a:active { top: 2px; }
+  
+/* Separator */
+#separator { margin: 4px auto -6px auto; width: 893px; height: 23px; background: url(../images/separator.png) no-repeat; z-index: 1; }
+  
+/* Content */
+#content { margin: 0 0 12px 4px; padding: 20px 20px 0 24px; border: solid 1px #ccc;
+	width: 845px; border-top: none; background: #fff; z-index: 2; }
+#content a { color: #25a; }
+#content em { font-style: italic; }
+#content ul { padding-left: 20px; list-style: square; }
+  
+  /* Main */
+  #main { width: 580px; }
+  #main h1 { margin: 30px 0 14px 0; font: 1.6em Museo500 }
+  #main h2 { margin: 0px 0 16px 0; font: 1em MuseoSansItalic300 }
+  #main h3 { margin: 20px 0 20px 0; font: 1em MuseoSans700; }
+  #main p, ul { margin-bottom: 14px; font: 0.9em Helvetica, Arial; line-height: 1.6em; color: #444; }
+  #main strong { font-weight: bold; }
+  
+  #main #todos0 { margin-bottom: 20px; padding: 20px; width: 400px; min-height: 256px; border: double 4px #666; }
+  #main .self-photo { float : left; clear: left; }
+  #main .self-photo.caption { margin: 8px 0 20px 0; font: 0.9em MuseoSans300; }
+  
+  /* Sidebar */
+  #sidebar { float: right; width: 240px; }
+  #sidebar .sidebox { margin-bottom: 20px; padding: 8px 16px 0 12px; border: solid 1px #ccc; border-radius: 6px; z-index: 10; }
+  #sidebar .sidebox h1 { margin-bottom: 10px; font: 1.1em MuseoSans500; }
+  #sidebar ul { font-size: 0.9em; color: #333; line-height: 1.3em; }
+  #sidebar li { margin-bottom: 4px; font-family: MuseoSans300; }
+
+/* Footer */
+#footer p { float: right; margin-bottom: 10px; font: .8em MuseoSans300; color: #444; }
+#footer strong { font-family: MuseoSans700 }
+#footer em { font-family: MuseoSans500 }

@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type"  content="text/html; charset=UTF-8" />
+  <meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
+  <meta http-equiv="Date"    content="Fri, 30 Dec 2011 20:34:13 GMT" />
+  <meta http-equiv="Pragma"  content="no-cache"/> 
+  <meta http-equiv="Expires" content="-1" />
+  
+  <title>Test</title>
+  
+  <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+  
+  <script type="text/javascript" src="../js/vendors/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/vendors/json/json2.min.js"></script>
+  <script type="text/javascript" src="../js/vendors/underscore/underscore.js"></script>
+  <script type="text/javascript" src="../js/stdlibrary.js"></script>
+  
+  <style>
+    #grid { width: 300px; height: 300px; border: solid 1px #333 }
+    .cell { width: 40px; height: 40px; border: solid 1px #bbb; }
+    .ch   { width: 20px; height: 20px; background: red}
+  </style>  
+  <script type="text/javascript">
+  
+  
+
+  $(function(){
+    
+    $('#grid').delegate('', 'click', function(e){
+      log('hello')
+    });
+
+  });
+  
+  </script>
+	
+</head>
+<body>
+  <div id="grid">
+      <div class="cell">
+        <div class='ch'></div>
+      </div>
+  </div>
+</body>
+</html>

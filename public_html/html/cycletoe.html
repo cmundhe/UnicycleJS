@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type"  content="text/html; charset=UTF-8" />
+  <meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
+  <!--<meta http-equiv="Date"    content="Fri, 30 Dec 2011 20:34:13 GMT" />-->
+  <meta http-equiv="Pragma"  content="no-cache"/> 
+  <meta http-equiv="Expires" content="-1" />
+  
+  <title>CycleToe</title>
+  
+  <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+  
+  <script type="text/javascript" src="../js/vendors/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/vendors/underscore/underscore.js"></script>
+  <script type="text/javascript" src="../js/vendors/json/json2.min.js"></script>
+  
+  <script type="text/javascript" src="../js/vendors/unicycle2/globals.js"></script>
+  <script type="text/javascript" src="../js/vendors/unicycle2/Object.js"></script>
+  <script type="text/javascript" src="../js/vendors/unicycle2/View.js"></script>
+  <script type="text/javascript" src="../js/vendors/unicycle2/ViewModel.js"></script>
+  <script type="text/javascript" src="../js/vendors/unicycle2/ViewModelArray.js"></script>
+  <script type="text/javascript" src="../js/vendors/unicycle2/unicycle.js"></script>
+  
+  <style>
+    body { padding: 12px 20px; font-family: Helvetica, Arial, sans-serif; }
+    body * { position: relative; }
+    p { font-size: .9em }
+    #grid { display: inline-block; vertical-align: top; margin-bottom: 20px; }
+    .cell { display: inline-block; vertical-align: top; margin: 0 0 -1px -5px;
+        padding: 20px; width: 20px; height: 20px; border : solid 1px #999;
+        text-align: center; cursor: pointer; }
+    
+  </style>
+  
+  <script id="template" type="text/html">
+    {{#_app}}
+    <div id="grid" style="width: {{width}}px;">{{cells}}</div>
+    <p>Arrow up/down to change size of grid</p>
+    {{#cells}}
+    <div class="cell">{{value}}</div>
+  </script>
+  
+  <script type="text/javascript" src="../js/cycletoe.js"></script>
+
+</head>
+<body>
+</body>
+</html>
+  
+  

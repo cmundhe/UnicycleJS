@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type"  content="text/html; charset=UTF-8" />
+	<meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
+	<meta http-equiv="Date"    content="Fri, 30 Dec 2011 20:34:13 GMT" />
+	<meta http-equiv="Pragma"  content="no-cache"/> 
+	<meta http-equiv="Expires" content="-1" /> 
+	
+	<title>TicTacToe</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	
+  <script type="text/javascript" src="js/vendors/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="js/vendors/underscore/underscore.js"></script>
+	<script type="text/javascript" src="js/vendors/json/json2.min.js"></script>
+	
+	<!-- Unicycle -->
+	<script type="text/javascript" src="js/vendors/unicycle/library.js"></script>
+	<script type="text/javascript" src="js/vendors/unicycle/Object.js"></script>
+	<script type="text/javascript" src="js/vendors/unicycle/Hash.js"></script>
+	<script type="text/javascript" src="js/vendors/unicycle/settings.js"></script>
+	<script type="text/javascript" src="js/vendors/unicycle/View.js"></script>
+	<script type="text/javascript" src="js/vendors/unicycle/ViewModel.js"></script>
+	<script type="text/javascript" src="js/vendors/unicycle/ViewArray.js"></script>
+	<script type="text/javascript" src="js/vendors/unicycle/History.js"></script>
+	<script type="text/javascript" src="js/vendors/unicycle/Storage.js"></script>
+	<script type="text/javascript" src="js/vendors/unicycle/App.js"></script>
+	
+	<style>
+		body { padding: 12px 20px; font-family: Helvetica, Arial, sans-serif; }
+		body * { position: relative; }
+		#grid { width : 180px; }
+		.cell { display: inline-block; vertical-align: top; margin: 0 0 -1px -5px; padding: 20px; width: 20px; height: 20px; border : solid 1px #999; text-align: center }
+	</style>
+	
+	<script id="template" type="text/html">
+		
+		<div id="grid">{{cells}}</div>
+		
+		{{#cells}}
+		<div class="cell">{{value}}</div>
+		
+	</script>
+	
+	<script type="text/javascript" src="js/tictactoe.js"></script>
+	
+</head>
+<body>
+</body>
+</html>

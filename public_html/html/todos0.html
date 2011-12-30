@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type"  content="text/html; charset=UTF-8" />
+  <meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
+  <meta http-equiv="Date"    content="Fri, 30 Dec 2011 20:34:13 GMT" />
+  <meta http-equiv="Pragma"  content="no-cache"/> 
+  <meta http-equiv="Expires" content="-1" /> 
+  
+  <title>Todos</title>
+  <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+  <style>
+    body { font-family: Helvetica, Arial, sans-serif; }
+    body * { position: relative; }
+    h1 { margin-bottom: 18px; font-size: 1.8em; font-weight: 600; color: #333; text-align: center; }
+    .new-todo { margin-bottom: 16px; width: 300px; height: 36px; font-size: 1.3em; font-style: italic; color: #999; }
+    .new-todo:focus { color : #666 }.todos li { padding: 12px 0 12px 0 ; border-bottom: solid 1px #ccc; height: 16px; }
+    .todos .check { display: inline-block; vertical-align: middle; margin-right: 12px; font-size: .5em; }
+    .todos .text { display: inline-block; width: 320px; color: #444; }
+    .todos .destroy { float: right; width: 20px; height: 20px; background: url(../images/destroy.png); cursor: pointer; }
+    .todos .destroy:hover { background-position: bottom }
+    .done { text-decoration: strikethrough }
+    .remaining { float: left }.completed { float: right }
+  </style>
+  
+  <script id="template" type="text/html">
+    
+    <form>
+      <h1>Todos</h1>
+      <input class="new-todo" type='text' value='What needs to be done?'/>
+      <ul class='todos'>{{todos}}</ul>
+    </form>
+    
+    {{#todos}}
+    <li class="{{isDone ? 'done' : ''}}">
+      <div class='text'>{{title}}</div>
+      <div class='destroy'></div>
+    </li>
+    
+  </script>
+  
+  <script type="text/javascript" src="../js/vendors/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/vendors/json/json2.min.js"></script>
+  <script type="text/javascript" src="../js/vendors/underscore/underscore.js"></script>
+  
+  <!-- Unicycle -->
+  <script type="text/javascript" src="../js/vendors/unicycle2/globals.js"></script>
+  <script type="text/javascript" src="../js/vendors/unicycle2/Object.js"></script>
+  <script type="text/javascript" src="../js/vendors/unicycle2/View.js"></script>
+  <script type="text/javascript" src="../js/vendors/unicycle2/ViewModel.js"></script>
+  <script type="text/javascript" src="../js/vendors/unicycle2/ViewModelArray.js"></script>
+  <script type="text/javascript" src="../js/vendors/unicycle2/unicycle.js"></script>
+  
+  <script type="text/javascript" src="../js/todos0.js"></script>
+</head>
+<body></body>
+</html>

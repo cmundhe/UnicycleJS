@@ -1,0 +1,38 @@
+# -*- tab-width: 2 -*-
+
+REST
+--------
+
+** Flat list of sections
+*  Unique section keys : id; title;
+    
+    /section/:id/
+    /section/:title/
+    /sections/
+
+--------
+
+** Flat list of sections which each have many articles
+*  Unique section keys : id; title;
+*  Unique article keys : id; section, title;
+
+    /section/:id/
+    /section/:title/
+    /sections/
+    
+    /article/:id/
+    /section/:id/article/:title/
+    /section/:title/article/:title/
+
+---------
+** Tree of sections which each have many articles
+*  Unique section keys : id; path;
+*  Unique article keys : id; section, title;
+    
+    /section/:id/
+    /section/:path/:to/:section/
+    /sections/
+    
+    /article/:id/
+    /section/:id/article/:title/
+    /section/:path/:to/:section/article/:title/

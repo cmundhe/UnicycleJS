@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  
+  <meta http-equiv="Content-Type"  content="text/html; charset=UTF-8" />
+  <meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
+  <meta http-equiv="Date"    content="Fri, 30 Dec 2011 20:34:13 GMT" />
+  <meta http-equiv="Pragma"  content="no-cache"/> 
+  <meta http-equiv="Expires" content="-1" />
+  
+  <title>BoneToe</title>
+  
+  <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+  
+  <script type="text/javascript" src="../js/vendors/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/vendors/underscore/underscore.js"></script>
+  <script type="text/javascript" src="../js/vendors/json/json2.min.js"></script>
+  <script type="text/javascript" src="../js/vendors/backbone/backbone.js"></script>
+  <script type="text/javascript" src="../js/bone.js"></script>
+  <script type="text/javascript" src="../js/bonetoe.js"></script>	
+  
+  <script id="app" type="text/html">
+    <div id="game">
+      <div id="grid">{{cells.template()}}</div>
+      <form>
+        <label>Dimension</label>
+        <input type="text" value="{{dimension}}" size=2 maxlength="2" />
+      </form>
+    </div>
+		
+	</script>
+	
+	<script id="cell" type="text/html">
+		<div class="cell">{{value}}</div>
+	</script>
+	
+  <style>
+    body { padding: 12px 20px; font-family: Helvetica, Arial, sans-serif; }
+    body * { position: relative; }
+    #grid { display: inline-block; vertical-align: top; width : 180px; }
+    .cell { display: inline-block; vertical-align: top; margin: 0 0 -1px -5px; 
+      padding: 20px; width: 20px; height: 20px; border : solid 1px #999; text-align: center }
+    form { display : inline-block; vertical-align: top;}
+  </style>
+  
+</head>
+<body>
+</body>
+</html>
